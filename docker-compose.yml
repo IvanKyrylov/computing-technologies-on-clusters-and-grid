@@ -1,0 +1,11 @@
+version: "3"
+services:
+  grid:
+    container_name: "grid"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./config:/app/config
+    environment:
+      - ENVIRONMENT=default
